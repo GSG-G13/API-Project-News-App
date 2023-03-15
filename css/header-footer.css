@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+.header {
+  width: 100%;
+  height: 350px;
+  background: url("../images/background.jpeg") no-repeat center;
+  background-size: cover;
+  text-align: center;
+}
+.overlay {
+  width: 100%;
+  height: 350px;
+  background-color: rgb(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 150px;
+}
+.overlay h1 {
+  color: white;
+  letter-spacing: 4px;
+  font-size: 50px;
+}
+.overlay .header-title {
+  color: white;
+  margin-bottom: 20px;
+}
+.overlay .header-search {
+  width: 50%;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.overlay .header-search .searching {
+  width: 100%;
+  padding: 15px 23% 15px 10px;
+  outline: none;
+  border: 1px solid red;
+}
+.overlay .header-search .searching::placeholder {
+  font-family: "Poppins", sans-serif;
+}
+.overlay .header-search .news-search-btn {
+  padding: 9px;
+  width: 20%;
+  margin-right: 6px;
+  position: absolute;
+  right: 0;
+  background-color: red;
+  outline: none;
+  border: 1px solid red;
+  cursor: pointer;
+  color: white;
+}
