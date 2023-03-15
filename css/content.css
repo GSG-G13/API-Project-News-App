@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+.news-weather {
+  margin-top: 20px;
+  padding: 0 150px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+.weather-container {
+  flex-basis: 32.33%;
+  background-color: #eee;
+  padding: 20px;
+  border-radius: 10px;
+  position: sticky;
+  top: 10px;
+}
+.weather-search-bar {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.weather-search-bar .weather-search-input {
+  width: 100%;
+  padding: 5px 30% 5px 5px;
+  outline: none;
+  border: 1px solid red;
+  border-radius: 7px;
+}
+.weather-search-bar .weather-search-input {
+  font-family: "Poppins", sans-serif;
+}
+.weather-search-bar .weather-btn {
+  padding: 4px;
+  margin-right: 4px;
+  position: absolute;
+  right: 0;
+  background-color: red;
+  outline: none;
+  border: 1px solid red;
+  cursor: pointer;
+  color: white;
+  border-radius: 3px;
+}
+.weather-details .weather-title {
+  width: 300px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin-bottom: 20px;
+}
+.weather-container .weather-description {
+  width: 300px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin-bottom: 20px;
+}
+.weather-container .weather-temperature {
+  width: 300px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.news-container {
+  flex-basis: 65.66%;
+}
+.news {
+  display: flex;
+  padding: 20px;
+  background-color: #eee;
+  border-radius: 10px;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.news .news-img {
+  width: 30%;
+  height: 140px;
+}
+.news .news-img img {
+  width: 100%;
+}
+.news-title {
+  font-size: 22px;
+  width: 400px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.news-published-at {
+  font-size: 14px;
+  color: red;
+}
+.news-description {
+  font-size: 16px;
+  width: 400px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.news-details a .news-read-more {
+  background-color: red;
+  cursor: pointer;
+  padding: 7px;
+  margin-top: 16px;
+  outline: none;
+  border: 1px solid red;
+  color: white;
+  border-radius: 7px;
+}

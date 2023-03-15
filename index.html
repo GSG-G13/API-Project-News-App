@@ -5,18 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/header-footer.css" />
+    <link rel="stylesheet" href="css/content.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <title>BBC NEWS</title>
   </head>
   <body>
     <header class="header">
-    <h1>BBC NEWS</h1>
-    <p class="header-title"><span>BBC News</span>are available on a full-time whenever you want</p>
-    <div>
-      <input  type="text"class="searching" placeholder="Search the BBC">
-     <button class="news-search-input">Search</button>
-    </div>
+      <div class="overlay">
+        <h1>BBC NEWS</h1>
+        <p class="header-title">
+          <span>BBC News</span>are available on a full-time whenever you want
+        </p>
+        <div class="header-search">
+          <input type="text" class="searching" placeholder="Search the BBC" />
+          <button class="news-search-btn">Search</button>
+        </div>
+      </div>
     </header>
-     <div class="news-weather">
+    <div class="news-weather">
       <aside class="weather-container">
         <div class="weather-search-bar">
           <input
@@ -26,39 +38,29 @@
           />
           <button class="weather-btn">Search</button>
         </div>
-        <h2 class="weather-title">Weather in Gaza</h2>
-        <p class="weather-description">broken clouds</p>
-        <p class="weather-temperature">50<sup>o</sup>C</p>
+        <div class="weather-details"></div>
       </aside>
       <section class="news-container">
         <div class="news">
           <div class="news-img">
-            <img src="" alt="news" class="news-img" />
+            <img src="images/background.jpeg" alt="news" class="news-img" />
           </div>
-          <h2 class="news-title">Test</h2>
-          <span class="news-published-at">15-2-2022</span>
-          <p class="news-description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Exercitationem, tempora.
-          </p>
-          <a href="" class="news-read-more"
-            ><button>Read More &rarr;</button></a
-          >
+          <div class="news-details">
+            <h2 class="news-title">Test</h2>
+            <span class="news-published-at">15-2-2022</span>
+            <p class="news-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Exercitationem, tempora.
+            </p>
+            <a href=""
+              ><button class="news-read-more">Read More &rarr;</button></a
+            >
+          </div>
         </div>
       </section>
     </div>
-    <footer>
-      <div class="footer-logo">
-          <div class="logo"><img src=".//images/logo.png" alt ="bbc-logo"></div>
-      </div>
-      <div class="footer">
-        <a href="#"><i class="fa-solid fa-envelope"></i>
-        <a href="#"></a><i class="fa-brands fa-twitter"></i></a>
-        <a href="#"></a><i class="fa-brands fa-facebook"></i></a>
-      </div>
-    </div>
-    <script src="js/main.js"></script>
     <script src="js/api.js"></script>
     <script src="js/dom.js"></script>
+    <script src="js/pure.js"></script>
   </body>
 </html>
