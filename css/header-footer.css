@@ -42,7 +42,8 @@ body {
   width: 100%;
   padding: 15px 23% 15px 10px;
   outline: none;
-  border: 1px solid red;
+  border: 1px solid rgb(126, 21, 21);
+  border-radius: 8px;
 }
 .overlay .header-search .searching::placeholder {
   font-family: "Poppins", sans-serif;
