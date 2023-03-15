@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/all.min.css" />
     <title>BBC NEWS</title>
   </head>
   <body>
@@ -15,17 +16,47 @@
      <button class="news-search-input">Search</button>
     </div>
     </header>
+     <div class="news-weather">
+      <aside class="weather-container">
+        <div class="weather-search-bar">
+          <input
+            type="text"
+            class="weather-search-input"
+            placeholder="Enter the City"
+          />
+          <button class="weather-btn">Search</button>
+        </div>
+        <h2 class="weather-title">Weather in Gaza</h2>
+        <p class="weather-description">broken clouds</p>
+        <p class="weather-temperature">50<sup>o</sup>C</p>
+      </aside>
+      <section class="news-container">
+        <div class="news">
+          <div class="news-img">
+            <img src="" alt="news" class="news-img" />
+          </div>
+          <h2 class="news-title">Test</h2>
+          <span class="news-published-at">15-2-2022</span>
+          <p class="news-description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Exercitationem, tempora.
+          </p>
+          <a href="" class="news-read-more"
+            ><button>Read More &rarr;</button></a
+          >
+        </div>
+      </section>
+    </div>
     <footer>
       <div class="footer-logo">
           <div class="logo"><img src=".//images/logo.png" alt ="bbc-logo"></div>
       </div>
-      <footer class="footer">
+      <div class="footer">
         <a href="#"><i class="fa-solid fa-envelope"></i>
         <a href="#"></a><i class="fa-brands fa-twitter"></i></a>
         <a href="#"></a><i class="fa-brands fa-facebook"></i></a>
       </div>
-    </footer>
-
+    </div>
     <script src="js/main.js"></script>
     <script src="js/api.js"></script>
     <script src="js/dom.js"></script>
