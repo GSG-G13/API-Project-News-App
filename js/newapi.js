@@ -95,3 +95,4 @@ button.addEventListener("click", () => {
     `https://newsapi.org/v2/everything?q=${searchingInput.value}&apiKey=a8b5329276ac4f60a90e30b4884c082f`
   );
   searchingInput.value = "";
+});
