@@ -52,7 +52,6 @@ const createNew = (imgUrl, title, date, desc, newsLink) => {
   appendChildern(containerDiv, h2, span, para, anchor);
   newsContainer.appendChild(news);
 };
-
 const showNews = (data) => {
   data.forEach(({ urlToImage, title, publishedAt, description, url }) => {
     createNew(urlToImage, title, publishedAt, description, url);
@@ -96,4 +95,3 @@ button.addEventListener("click", () => {
     `https://newsapi.org/v2/everything?q=${searchingInput.value}&apiKey=a8b5329276ac4f60a90e30b4884c082f`
   );
   searchingInput.value = "";
-});
