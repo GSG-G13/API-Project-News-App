@@ -8,20 +8,24 @@ body {
 }
 .news-weather {
   margin-top: 20px;
+  padding: 0 150px;
   display: flex;
   justify-content: space-between;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   align-items: flex-start;
-  padding: 0 150px;
 }
 .weather-container {
   flex-basis: 32.33%;
-  min-width: 32.33%;
   background-color: #eee;
   padding: 20px;
   border-radius: 10px;
   position: sticky;
   top: 10px;
+}
+.weather-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: red;
 }
 .weather-search-bar {
   width: 100%;
@@ -73,8 +77,7 @@ body {
   text-overflow: ellipsis;
 }
 .news-container {
-  margin-left: 8px;
-  margin-right: 8px;
+  flex-basis: 65.66%;
 }
 .news {
   display: flex;
@@ -84,14 +87,18 @@ body {
   gap: 10px;
   margin-bottom: 20px;
 }
-
+.news .news-img {
+  width: 30%;
+  height: 140px;
+}
 .news .news-img img {
   width: 100%;
-  width: 150px;
-  object-fit: cover;
+  height: 140px;
 }
 .news-title {
   font-size: 22px;
+  width: 400px;
+  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
@@ -99,8 +106,41 @@ body {
   font-size: 14px;
   color: red;
 }
+
 .news-description {
   font-size: 16px;
+  width: 400px;
+  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
+.news-details a .news-read-more {
+  background-color: red;
+  cursor: pointer;
+  padding: 7px;
+  margin-top: 16px;
+  outline: none;
+  border: 1px solid red;
+  color: white;
+  border-radius: 7px;
+}
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: black;
+  display: none;
+}
+.loader img {
+  height: 257px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+

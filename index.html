@@ -4,15 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/header-footer.css" />
-    <link rel="icon" href="./images/logo.png">
-    <link rel="stylesheet" href="css/content.css" />
+    <link rel="stylesheet" href="./css/header-footer.css" />
+    <link rel="stylesheet" href="./css/content.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="icon" href="./images/logo.png" />
     <title>BBC NEWS</title>
   </head>
   <body>
@@ -30,19 +30,21 @@
     </header>
     <div class="news-weather">
       <aside class="weather-container">
+        <h1>Weather</h1>
         <div class="weather-search-bar">
           <input
             type="text"
             class="weather-search-input"
-            placeholder="Enter the City"
+            placeholder="Enter the Country, City"
           />
           <button class="weather-btn">Search</button>
         </div>
         <div class="weather-details"></div>
       </aside>
-      <section class="news-container">
-
-      </section>
+      <section class="news-container"></section>
+    </div>
+    <div class="loader">
+      <img src="./images/loader.gif" alt="Loader" />
     </div>
     <script src="./js/newapi.js"></script>
     <script src="./js/api.js"></script>
