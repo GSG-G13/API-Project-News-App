@@ -10,6 +10,29 @@ we have an advantage in our app which is you can get weather.
 
 ---
 
+## Languages.
+
+- HTML
+- CSS
+- JavaScript
+- XHR (API)
+
+---
+
+## Notes:
+
+- if you search about certain news for country and cities you will got it.
+- if you search about certain weather for country and cities you will got it.
+
+---
+
+## API Resources.
+
+- <a>https://newsapi.org/</a> -- For News
+- <a>https://openweathermap.org/</a> -- For Weather
+
+---
+
 **Our team:**
 
 _Heleena Darwish_.
